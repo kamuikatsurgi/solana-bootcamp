@@ -8,7 +8,7 @@ use solana_program::{
     pubkey::Pubkey,
 };
 
-solana_program::declare_id!("A2d1jAfAxJ2UruUNN8agCzFgEjx8EGgMFapC7D9PKu2m");
+solana_program::declare_id!("22yzMqYZj3JorrWCk6RLbsi6r43Xng4bCLrRed14vFnF");
 
 #[derive(BorshSerialize, BorshDeserialize, Debug)]
 pub struct GreetingAccount {

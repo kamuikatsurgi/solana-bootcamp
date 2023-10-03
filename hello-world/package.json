@@ -10,7 +10,7 @@
     "start-with-test-validator": "start-server-and-test 'solana-test-validator --reset --quiet' http://localhost:8899/health start",
     "lint": "eslint --ext .ts src/client/* && prettier --check \"src/client/**/*.ts\"",
     "lint:fix": "eslint --ext .ts src/client/* --fix && prettier --write \"src/client/**/*.ts\"",
-    "build:rust": "cargo-build-bpf --manifest-path=./src/rust/Cargo.toml --bpf-out-dir=dist/program",
+    "build:rust": "cargo build-bpf --manifest-path=./src/rust/Cargo.toml --bpf-out-dir=dist/program",
     "clean:rust": "cargo clean --manifest-path=./src/rust/Cargo.toml && rm -rf ./dist",
     "test:rust": "cargo test-bpf --manifest-path=./src/program-rust/Cargo.toml",
     "pretty": "prettier --write '{,src/**/}*.ts'"
